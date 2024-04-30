@@ -4,9 +4,9 @@ module.exports = {
     theme: {
       extend: {
         fontFamily: {
-          promt: ["Prompt"],
-          omnium: ["Omnium Tagline"],
-
+          prompt: ['"Prompt"'],
+          omnium: ['"Omnium"'],
+        },
         colors: {
           rod: {
             50: "#FFFAFA",
