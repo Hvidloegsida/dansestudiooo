@@ -1,0 +1,70 @@
+[
+    {"id": 1, 
+    "holdnavn": "Movement Workshop ",
+    "holdbillede": "timothy.jpg",
+    "hodlbilledealt": "Masterclass i Koreografi Flow ",
+    "holdbeskrivelse": "Workshoppens omdrejningspunkt er “Morph Movement” – at sammensmelte mange forskellige dansestilarter. Så du kan komme, om du danser house, locking, contemporary eller noget helt fjerde.",
+    "tilmeldingslink": "/movement-workshop",
+    "dato": "21 april",
+    "tidspunkt": "10-12",
+    "underviser": "Timothy De Mesa Højgaard",
+    "underviserfoto": "timothy.jpg",
+    "underviserfotoalt": "Timothy De Mesa Højgaard", 
+    "underviserurl": "/undervisere/Timothy De Mesa Højgaard",
+    "underviserinfo": "Timothy begyndte som gymnast og uddannede sig senere som danser i København. Han har medvirket i flere tv-produktioner som “Vild med dans”, “X Factor”, “Danmark har talent” og har også optrådt ved “Copenhagen Fashion Week”. ",
+    "nythold": true
+       
+       
+    }, 
+    {
+        "id": 2, 
+        "holdnavn": "Masterclass i Koreografi Flow – Hip Hop/Experimental",
+        "holdbillede": "olivia.jpg",
+        "hodlbilledealt": "Masterclass i Koreografi Flow ",
+        "holdbeskrivelse": "Denne masterclass vil vi fokusere på musikkens dynamik og på hvordan denne inspirerer os til at udforske vores bevægelsesflow. For at blive opmærksom på dine styrker og svagheder, og dermed forbedre dig, vil du i klassen blive presset til at bruge din krops fulde ekstensioner og alle dens niveauer. Du vil komme til at danse indefra og ud.",
+        "tilmeldingslink": "/movement-workshop",
+        "dato": "9 marts",
+        "tidspunkt": "15-17:30",
+        "underviser": "Olivia Sol Anselmo",
+        "underviserfoto": "olivia.jpg",
+        "underviserfotoalt": "Olivia Sol Anselmo", 
+        "underviserurl": "/undervisere/Olivia Sol Anselmo",
+        "underviserinfo": "Freelance danser og koreograf Olivia Sol Anselmo har mere erfaring end de fleste. Hun har danset professionelt i forskellige projekter siden hun var 11 år, og har undervist både i sin hjemby København og på tværs af landegrænser. Olivia er kendt for sine ubesværede bevægelser, med stor respekt for musikken, og hendes scene-tilstedeværelse. Når ikke hun underviser, så arbejder hun med store stjerner både på og bag scenen, koordinerer dansere, instruerer scene-byggeri, lyd og koreografier.",
+        "nythold": true
+    },
+    {
+        "id": 3, 
+        "holdnavn": "Commercial Performance",
+        "holdbillede": "anna.jpg",
+        "hodlbilledealt": "anna",
+        "holdbeskrivelse": "I denne workshop kommer vi til at dykke ned i kommercielle redskaber, der styrker performance og udtryk i din dans. Vi arbejder i et trygt og konstruktivt rum med plads til at udforske og skubbe egne grænser og lege med det, vi alle elsker – at danse. ",
+        "tilmeldingslink": "Commercial Performance/-workshop",
+        "dato": "10 december",
+        "tidspunkt": "14-16",
+        "underviser": "Anna Zacho",
+        "underviserfoto": "anna.jpg",
+        "underviserfotoalt": "Anna Zacho", 
+        "underviserurl": "/undervisere/Anna Zacho",
+        "underviserinfo": "Anna er født og opvokset i Aarhus, hvor hun startede sin dansekarriere. Her har hun gået på Aarhus Dance Education, været en del af grupper som Vocazion og I AM og booket jobs for bl.a. Tessa. Derudover har hun undervist 6 sæsoner på Planum Studios indtil hun i 2021 startede THE EDGE DANCE SPACE, et dansestudie med fokus på feminine genre og safe spaces, med Cæcilie Kirk. ",
+        "nythold": true
+    },
+    {
+        "id": 4, 
+        "holdnavn": "Hip hop",
+        "holdbillede": "marie.jpeg",
+        "hodlbilledealt": "marie hiphop",
+        "holdbeskrivelse": "Til min workshop på Dansestudiet skal vi danse hip hop, hvor jeg vil fokusere på forskellige grooves og foundations – både i opvarmningen, men også i den koreografi I skal lære. Jeg lægger altid meget vægt på musikalitet, tekstur og kontraster, så disse kvaliteter vil vi også træne. I min undervisning møder jeg altid mine elever hvor de er, og sørger for, at de går fra timen med et smil på læben og ny læring i rygsækken.",
+        "tilmeldingslink": "hiphop/-workshop",
+        "dato": "3.septemper",
+        "tidspunkt": "10-12",
+        "underviser": "Marie Bang ",
+        "underviserfoto": "marie.jpeg",
+        "underviserfotoalt": "marie bang", 
+        "underviserurl": "Marie Bang/undervisere/",
+        "underviserinfo": "Marie er født og opvokset i Aarhus men er nu bosiddende i København. Hun er en alsidig professionel danser, men er særligt trænet i hip hop, waacking og house. Det er vigtigt for Marie at være i konstant udvikling som danser, koreograf og underviser og derfor dygtiggør hun sig regelmæssigt i blandt andet Los Angeles. Hun har undervist internationalt, senest i Toronto, Canada.",
+        "nythold": true
+    }
+
+  
+  
+]

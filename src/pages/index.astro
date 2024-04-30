@@ -1,17 +1,79 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Button from '../components/Button.astro';
+import Button from "../components/Button.astro";
 import Hero from "../components/Hero.astro";
 import Section1 from "../components/Section1.astro";
 import Section2 from "../components/Section2.astro";
 import Section3 from "../components/Section3.astro";
 import { imageConfig } from "astro:assets";
 ---
+
 <MainLayout title="Titel">
-	<article>
-		<Hero />
-		<Section1 />
-		<Section2 />
-		<Section3 />
-	</article>
+  <article>
+    <Hero />
+    <Section1 />
+    <Section2 />
+    <Section3 />
+  </article>
+
+  <section
+    x-data="{ alleworkshops: []}"
+    x-init="alleworkshops = await (await fetch('workshops.json')).json(); alleworkshops.reverse();"
+    class="mb-16"
+  >
+    <h2 class="my-8 text-4xl">WORKSHOPS</h2>
+    <!-- alt hvad der omhandler cards til dansehold -->
+    <section class="grid md:grid-cols-2 gap-4">
+      <template x-for="workshops in alleworkshops" :key="workshops.id">
+        <article class="">
+          <a href="#">
+            <header class="">
+              <img
+                :src="workshops.holdbillede"
+                :alt="workshops.hodlbilledealt"
+                class=""
+              />
+            </header>
+            <section class="p-4">
+              <h3 class="text-3xl mb-4 font-bold" x-text="workshops.holdnavn">
+              </h3>
+              <div class="grid grid-cols-2 mb-4">
+                <div class="venstre">
+                  <div>
+                    <span class="font-bold">Dato: </span><span
+                      x-text="workshops.dato"></span>
+                  </div>
+                  <div>
+                    <span class="font-bold">Tid: </span><span
+                      x-text="workshops.tidspunkt"></span>
+                  </div>
+                </div>
+                <div class="hoejre">
+                  <div></div>
+                </div>
+              </div>
+              <p class="" x-text="workshops.holdbeskrivelse"></p>
+            </section>
+            <hr />
+            <section class="flex my-6 gap-4 p-4">
+              <div class="flex-none">
+                <img
+                  :src="workshops.underviserfoto"
+                  :alt="workshops.underviserfotoalt"
+                  class="object-cover h-16 w-16 rounded-full"
+                />
+              </div>
+              <div class="">
+                <p class="font-bold">
+                  Underviser: <span href="#" x-text="workshops.underviser"
+                  ></span>
+                </p>
+                <p x-text="workshops.underviserinfo"></p>
+              </div>
+            </section>
+          </a>
+        </article>
+      </template>
+    </section>
+  </section>
 </MainLayout>
