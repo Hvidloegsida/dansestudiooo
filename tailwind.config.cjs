@@ -6,7 +6,7 @@ module.exports = {
     extend: {
       fontFamily: {
         prompt: ["Prompt"],
-        omnium: ["Omnium"],
+        omnium: ["Omnium Tagline"],
       },
       colors: {
         rod: {
