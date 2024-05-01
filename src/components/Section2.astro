@@ -3,15 +3,92 @@ import Button from "./Button.astro";
 ---
 
 <section>
-
-    <div>
-        <h2>Workshops</h2>
+  <article class="bg-rod-500 py-12">
+    <section
+      x-data="{ alleworkshops: []}"
+      x-init="alleworkshops = await (await fetch('workshops.json')).json(); alleworkshops.reverse();"
+      class=""
+    >
+      <h3
+        class="font-prompt font-bold text-[30px] text-center text-gron-500 lg:left-[10px] lg:text-[52px] md:pb-[20px] mb-10"
+      >
+        WORKSHOPS
+      </h3>
+      <section class="flex justify-center overflow-x-auto">
+        <div class="max-w-6xl w-full">
+          <section
+            class="grid grid-cols-1 gap-2 px-11 lg:grid lg:grid-cols-2 lg:gap-11 md:grid"
+          >
+            <template x-for="workshops in alleworkshops" :key="workshops.id">
+              <div
+                class="mb-10 border-4 border-gron-500 rounded-lg shadow-md bg-rod-300"
+              >
+                <article class="">
+                  <a href="#">
+                    <header class="">
+                      <img
+                        :src="workshops.holdbillede"
+                        :alt="workshops.hodlbilledealt"
+                        class="p-4"
+                      />
+                    </header>
+                    <section class="p-10">
+                      <h4
+                        class="font-prompt font-bold text-xl lg:text-[30px] text-gron-500"
+                        x-text="workshops.holdnavn"
+                      >
+                      </h4>
+                      <div class="">
+                        <div class="">
+                          <div>
+                            <span class="font-bold font-prompt"
+                              >Dato:
+                            </span><span x-text="workshops.dato"></span>
+                          </div>
+                          <div>
+                            <span class="font-bold font-prompt"
+                              >Tid:
+                            </span><span x-text="workshops.tidspunkt"></span>
+                          </div>
+                        </div>
+                        <div class="">
+                          <div></div>
+                        </div>
+                      </div>
+                      <p class="font-prompt" x-text="workshops.holdbeskrivelse">
+                      </p>
+                    </section>
+                    <hr />
+                    <!--  følgende kan slettes hvis vi ikke vil have underviser view -->
+                    <section class="p-10">
+                      <div class="">
+                        <img
+                          :src="workshops.underviserfoto"
+                          :alt="workshops.underviserfotoalt"
+                          class="object-cover h-16 w-16 rounded-full"
+                        />
+                      </div>
+                      <div class="font-prompt">
+                        <p class="font-bold">
+                          Underviser: <span
+                            href="#"
+                            x-text="workshops.underviser"></span>
+                        </p>
+                        <p x-text="workshops.underviserinfo"></p>
+                      </div>
+                    </section>
+                  </a>
+                </article>
+              </div>
+            </template>
+          </section>
+        </div>
+      </section>
+    </section>
+    <div class="flex items-center justify-center">
+      <Button variant="primarytxt">Se alle workshops</Button>
     </div>
+  </article>
 
-    <div></div>
-
-<div class="flex items-center justify-center">
-<Button variant="primarytxt">Se alle workshops</Button></div>
-
-
+  <div></div>
 </section>
