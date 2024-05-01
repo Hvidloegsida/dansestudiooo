@@ -1,5 +1,19 @@
 ---
+const { variant= "primary"} = Astro.props; 
+
+const buttonStyling = "bg-hvid-950 text-rod-500 font-prompt px-8 py-1 -skew-x-[15deg] hover:bg-gron-500";
+
+const variantClasses = {
+    "primary": "",
+    "secondary": ""
+
+};
 ---
-<div>
-    <button><slot /></button>
-</div>
+
+    <button class:list={[buttonStyling, variantClasses[variant],]}>
+        <div class="skew-x-[15deg] text-[19px] md:text-[31px]">
+        <slot />
+    </div>
+    </button>
+
+
