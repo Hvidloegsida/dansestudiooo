@@ -1,17 +1,24 @@
 ---
+
+/*DO NOT TOUCH THE BUTTON CODE, IT WILL FUCK ITSELF OVER*/
 const { variant= "primary"} = Astro.props; 
 
-const buttonStyling = "bg-hvid-950 text-rod-500 font-prompt font-light px-8 py-1 -skew-x-[15deg] hover:bg-gron-500 md:";
+const buttonStyling = "bg-hvid-950 text-rod-500 font-prompt font-light -skew-x-[15deg] hover:bg-gron-500";
 
-const variantClasses = {
+const variantClassessize = {
     "primary": "px-8 py-1",
     "secondary": ""
 
 };
+
+const variantClassestext = {
+    "primarytxt": "text-[19px] md:text-[31px] skew-x-[15deg] px-8 py-1",
+    "secondarytxt": "text-[13px] md:text-[31px] skew-x-[15deg] px-8 py-1"
+};
 ---
 
-    <button class:list={[buttonStyling, variantClasses[variant],]}>
-        <div class="skew-x-[15deg] text-[19px] md:text-[31px]">
+    <button class:list={[buttonStyling, variantClassessize[variant],]}>
+        <div class:list={[variantClassestext[variant],]}>
         <slot />
     </div>
     </button>
