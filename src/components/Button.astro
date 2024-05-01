@@ -1,5 +1,15 @@
 ---
+const { variant= "primary"} = Astro.props; 
+
+const buttonStyling = "bg-hvid-950 text-rod-500 font-prompt px-5 -skew-x-12";
+
+const variantClasses = {
+    "primary": " skew-x-12",
+    "secondary": ""
+
+};
 ---
-<div>
-    <button><slot /></button>
+<div class:list={[buttonStyling]}>
+    <button class:list={[variantClasses[variant],]}><slot /></button>
 </div>
+
