@@ -23,9 +23,9 @@ import Button from "./Button.astro";
               <div
                 class="mb-10 border-4 border-gron-500 rounded-lg shadow-md bg-rod-300 shadow-pop-tl"
               >
-                <article class="">
-                  <a href="#">
-                    <header class="">
+                <article>
+                  <a>
+                    <header>
                       <img
                         :src="workshops.holdbillede"
                         :alt="workshops.hodlbilledealt"
@@ -38,8 +38,8 @@ import Button from "./Button.astro";
                         x-text="workshops.holdnavn"
                       >
                       </h4>
-                      <div class="">
-                        <div class="">
+                      <div>
+                        <div>
                           <div>
                             <span class="font-bold font-prompt"
                               >Dato:
@@ -51,17 +51,14 @@ import Button from "./Button.astro";
                             </span><span x-text="workshops.tidspunkt"></span>
                           </div>
                         </div>
-                        <div class="">
-                          <div></div>
-                        </div>
                       </div>
                       <p class="font-prompt" x-text="workshops.holdbeskrivelse">
                       </p>
                     </section>
-                    <hr />
+
                     <!--  følgende kan slettes hvis vi ikke vil have underviser view -->
                     <section class="p-10">
-                      <div class="">
+                      <div>
                         <div class="font-prompt">
                           <p class="font-bold">
                             Underviser: <span
