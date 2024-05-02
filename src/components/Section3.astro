@@ -26,9 +26,9 @@ import Button from "./Button.astro";
     </h3>
 
     <div class="flex gap-9 w-[25%] pb-20 ml-5 md:ml-[10%]">
-      <img src="/dans1.png" alt="danse portrætter" class="flip-in-ver-right" />
-      <img src="/dans2.png" alt="danse portrætter" class="flip-in-ver-right"/>
-      <img src="/dans3.png" alt="danse portrætter" class="flip-in-ver-right"/>
+      <img src="/dans1.png" alt="danse portrætter" class="flippy1" />
+      <img src="/dans2.png" alt="danse portrætter" class="flippy2"/>
+      <img src="/dans3.png" alt="danse portrætter" class="flippy3"/>
     </div>
   </div>
 </section>
@@ -41,9 +41,9 @@ import Button from "./Button.astro";
 
 
 
-    .flip-in-ver-right {
-	-webkit-animation: flip-in-ver-right 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: flip-in-ver-right 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+.flippyanimation {
+	-webkit-animation: flip-in-ver-right 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.7s both;
+	        animation: flip-in-ver-right 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.7s both;
 }
 
 
@@ -87,3 +87,33 @@ import Button from "./Button.astro";
 
 </style>
 
+<script>
+
+import { inView } from "motion";
+
+const flippy = document.querySelector(".flippy1");
+
+inView(flippy, () => {
+
+flippy.classList.add("flippyanimation");
+
+}, { margin: "1000px 0px 0px 0px" }
+);
+const flippy2 = document.querySelector(".flippy2");
+
+inView(flippy2, () => {
+
+flippy2.classList.add("flippyanimation");
+
+}, { margin: "1000px 0px 0px 0px" }
+); 
+
+const flippy3 = document.querySelector(".flippy3");
+
+inView(flippy3, () => {
+
+flippy3.classList.add("flippyanimation");
+
+}, { margin: "1000px 0px 0px 0px" }
+); 
+</script>
